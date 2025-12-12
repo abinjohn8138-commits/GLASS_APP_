@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass Type Prediction</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+        .box { background: white; padding: 20px; width: 400px; margin: auto; border-radius: 8px; }
+        input { width: 100%; padding: 8px; margin: 5px 0; }
+        button { width: 100%; padding: 10px; background: blue; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Glass Type Prediction</h2>
+        <form action="/predict" method="POST">
+            <label>RI</label><input name="RI" required>
+            <label>Na</label><input name="Na" required>
+            <label>Mg</label><input name="Mg" required>
+            <label>Al</label><input name="Al" required>
+            <label>Si</label><input name="Si" required>
+            <label>K</label><input name="K" required>
+            <label>Ca</label><input name="Ca" required>
+            <label>Ba</label><input name="Ba" required>
+            <label>Fe</label><input name="Fe" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
