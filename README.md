@@ -56,4 +56,4 @@ The dataset includes 9 numeric features, representing the chemical composition o
 
 # Source
 
-This dataset is originally from the UCI Machine Learning Repository and widely used for academic and research purposes.
+This dataset is originally from the KAGGLE and widely used for academic and research purposes.
